@@ -2,9 +2,7 @@
 
 Progetto per l'esame finale di **Laboratorio di Algoritmi e Strutture Dati** (A.A. 2024/2025).
 
-[cite_start]Questo progetto consiste nella progettazione e implementazione in **Java** di una struttura dati ad albero n-ario (dove non è noto a priori il numero massimo di figli per nodo)[cite: 1584]. [cite_start]A differenza delle classiche implementazioni basate su puntatori ai figli, questo albero è stato modellato utilizzando **due strutture indicizzate (array) parallele**[cite: 1587].
-
-**Autori:** Marco Arcuri, Mario Casalini, Tommaso Scoti
+Questo progetto consiste nella progettazione e implementazione in **Java** di una struttura dati ad albero n-ario (dove non è noto a priori il numero massimo di figli per nodo). A differenza delle classiche implementazioni basate su puntatori ai figli, questo albero è stato modellato utilizzando **due strutture indicizzate (array) parallele**.
 
 ---
 
@@ -31,7 +29,7 @@ Per le operazioni di calcolo strutturale, sono stati implementati algoritmi rico
 * [cite_start]Generazione della **notazione a stringa formattata** dell'albero (es. `A[B[], C[D[]]]`), utile per la serializzazione e la visualizzazione testuale della gerarchia[cite: 1632].
 
 ### 4. Analisi Asintotica
-Il codice sorgente è interamente documentato, includendo per ogni metodo implementato l'analisi della **complessità computazionale asintotica** (Notazione Big-O), evidenziando la consapevolezza dell'impatto prestazionale delle operazioni sulle strutture ad array rispetto a quelle a liste concatenate (es. $O(1)$, $O(n)$, $O(n^2)$).
+Il codice sorgente è interamente documentato, includendo per ogni metodo implementato l'analisi della **complessità computazionale asintotica** (Notazione Big-O), evidenziando la consapevolezza dell'impatto prestazionale delle operazioni sulle strutture ad array rispetto a quelle a liste concatenate (es. O(1), O(n), O(n^2)).
 
 ---
 
@@ -40,5 +38,8 @@ Il codice sorgente è interamente documentato, includendo per ogni metodo implem
 1. Clona la repository sul tuo ambiente locale.
 2. Assicurati di avere installato il **JDK** (Java Development Kit).
 3. Compila i file `.java` situati nella cartella `src/alberovp/`:
-   ```bash
-   javac src/alberovp/*.java
+   `javac src/alberovp/*.java`
+4. Esegui il file `Main` per lanciare la suite di test integrata:
+   `java -cp src alberovp.Main`
+
+La classe `Main` copre il 100% delle funzionalità richieste: inserimento nodi, calcolo del livello, visite BFS/DFS, sostituzione radice e rappresentazione a stringa.
