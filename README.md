@@ -4,8 +4,6 @@ Progetto d'esame per il corso di **Laboratorio di Algoritmi e Strutture Dati** (
 
 Questo progetto implementa una struttura dati ad **albero n-ario** (dove il numero massimo di figli per nodo non è noto a priori) in linguaggio **Java**. L'albero memorizza informazioni e garantisce che ogni nuovo nodo inserito diventi l'ultimo figlio del nodo padre specificato.
 
-**Autori:** Marco Arcuri (7162557), Mario Casalini (7164154), Tommaso Scoti (7164697) 
-
 ---
 
 ## 🏗️ Struttura Dati: I Vettori Paralleli
