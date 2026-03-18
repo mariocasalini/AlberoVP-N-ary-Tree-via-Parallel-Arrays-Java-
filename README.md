@@ -1,4 +1,4 @@
-# 🌳 Albero N-Ario tramite Vettori Paralleli (Java)
+# Albero N-Ario tramite Vettori Paralleli (Java)
 
 Progetto d'esame per il corso di **Laboratorio di Algoritmi e Strutture Dati** (A.A. 2024-2025).
 
@@ -6,20 +6,20 @@ Questo progetto implementa una struttura dati ad **albero n-ario** (dove il nume
 
 ---
 
-## 🏗️ Struttura Dati: I Vettori Paralleli
+## Struttura Dati: I Vettori Paralleli
 
 [cite_start]L'implementazione si discosta dalle classiche strutture a puntatori collegati (linked nodes) per rispettare i vincoli di progetto, avvalendosi di due array paralleli gestiti dinamicamente:
 
-1. [cite_start]**`nodi[]`**: Array contenente le istanze dei nodi effettivi.
+1. **`nodi[]`**: Array contenente le istanze dei nodi effettivi.
 2. **`padri[]`**: Array che memorizza la gerarchia. [cite_start]Il nodo in posizione *i-esima* di questo array rappresenta il padre del nodo situato nella medesima posizione *i-esima* nell'array `nodi`. La radice ha valore `null` in questo array.
 
 L'espansione della memoria avviene in fase di esecuzione: ogni volta che si aggiunge un nodo, gli array vengono ridimensionati espandendo la loro capacità di `+1` e copiando i vecchi valori, garantendo che i nuovi figli occupino le ultime posizioni della struttura.
 
 ---
 
-## ⚙️ Funzionalità e Algoritmi Implementati
+## Funzionalità e Algoritmi Implementati
 
-[cite_start]La classe `AlberoVP` implementa tutti i metodi richiesti dalle specifiche, con un'attenzione particolare alle performance (complessità asintotica):
+La classe `AlberoVP` implementa tutti i metodi richiesti dalle specifiche, con un'attenzione particolare alle performance (complessità asintotica):
 
 ### Inserimento e Modifica
 * **`setRadice(String info)`**: Inserisce la radice in un albero vuoto (Complessità: O(n)).
@@ -29,7 +29,7 @@ L'espansione della memoria avviene in fase di esecuzione: ogni volta che si aggi
 
 ### Interrogazione e Metriche
 * [**`getRadice()`** / **`getPadre(NodoVP v)`**: Navigazione base verso l'alto (Complessità: O(n)).
-* **`getFigli(NodoVP v)`** / **`getNumFigli(NodoVP v)`**: Navigazione verso il basso con restituzione di liste dinamiche (Complessità: O(n))[cite: 1620, 1625].
+* **`getFigli(NodoVP v)`** / **`getNumFigli(NodoVP v)`**: Navigazione verso il basso con restituzione di liste dinamiche (Complessità: O(n)).
 * **`getLivello(NodoVP v)`**: Calcola la profondità di un nodo risalendo l'albero fino alla radice (Complessità: O(n^2)).
 * **`getAltezza()`**: Calcola l'altezza complessiva dell'albero (Complessità: O(n^2)).
 * **`getNumFoglie(NodoVP v)`**: Ricerca ricorsiva che esplora i sotto-alberi per contare i nodi privi di figli (Complessità: O(n^2)).
