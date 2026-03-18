@@ -8,7 +8,7 @@ Questo progetto implementa una struttura dati ad **albero n-ario** (dove il nume
 
 ## Struttura Dati: I Vettori Paralleli
 
-[cite_start]L'implementazione si discosta dalle classiche strutture a puntatori collegati (linked nodes) per rispettare i vincoli di progetto, avvalendosi di due array paralleli gestiti dinamicamente:
+L'implementazione si discosta dalle classiche strutture a puntatori collegati (linked nodes) per rispettare i vincoli di progetto, avvalendosi di due array paralleli gestiti dinamicamente:
 
 1. **`nodi[]`**: Array contenente le istanze dei nodi effettivi.
 2. **`padri[]`**: Array che memorizza la gerarchia. [cite_start]Il nodo in posizione *i-esima* di questo array rappresenta il padre del nodo situato nella medesima posizione *i-esima* nell'array `nodi`. La radice ha valore `null` in questo array.
@@ -37,7 +37,7 @@ La classe `AlberoVP` implementa tutti i metodi richiesti dalle specifiche, con u
 ### Visite dell'Albero (Attraversamenti Grafi)
 Per esplorare l'albero, sono stati implementati algoritmi iterativi supportati da strutture dati ausiliarie del framework `java.util`:
 * **Visita in Profondità (DFS - `visitaProfondita`)**: Usa uno `Stack` (`LinkedList` gestita con inserimento in testa) per esplorare l'albero ramo per ramo (Complessità: O(n^2)). I figli vengono caricati nello stack in ordine inverso per garantire la visita da sinistra verso destra.
-* **Visita in Ampiezza (BFS - `visitaAmpiezza`)**: Usa una `Queue` (coda FIFO) per analizzare l'albero livello per livello (Complessità: O(n^2))[cite: 1631].
+* **Visita in Ampiezza (BFS - `visitaAmpiezza`)**: Usa una `Queue` (coda FIFO) per analizzare l'albero livello per livello (Complessità: O(n^2)).
 
 ### Rappresentazione Strutturale
 * **`stringaAlbero()`**: Metodo ricorsivo che serializza l'albero in una stringa formattata annidata (es. `A[B[], C[D[]]]`), rispettando fedelmente il formato richiesto dalle specifiche di progetto.
